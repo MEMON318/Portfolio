@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fb;
+    color: #17243a;
+}
+
+header {
+    background: #101d35;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #e8b75b;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #e8b75b;
+}
+
+.hero {
+    min-height: 570px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: linear-gradient(120deg, #101d35, #203958);
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h4 {
+    color: #e8b75b;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.hero-content h1 span {
+    color: #e8b75b;
+}
+
+.hero-content p {
+    color: #d4dce9;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #e8b75b;
+    color: #101d35;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.profile {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    border: 7px solid #e8b75b;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #e8b75b;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section {
+    padding: 75px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #101d35;
+}
+
+.section-title span {
+    color: #d49b38;
+}
+
+.section-title p {
+    color: #68758a;
+    margin-top: 10px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.about-box {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px #17243a0c;
+}
+
+.about-box h3 {
+    margin-bottom: 15px;
+    color: #101d35;
+}
+
+.about-box p {
+    line-height: 1.9;
+    color: #68758a;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.info p {
+    margin: 10px 0;
+}
+
+.info strong {
+    color: #17243a;
+}
+
+.education {
+    background: #eaf0f8;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px #17243a0b;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px #17243a18;
+}
+
+.card .icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #101d35;
+}
+
+.card p {
+    color: #68758a;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 40px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.progress {
+    background: #e1e6ef;
+    height: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress div {
+    height: 100%;
+    background: #d9a644;
+    border-radius: 20px;
+}
+
+.contact {
+    background: #101d35;
+    color: white;
+    text-align: center;
+}
+
+.contact .section-title h2 {
+    color: white;
+}
+
+.contact p {
+    color: #cbd4e1;
+    margin-bottom: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0b1527;
+    color: #cbd4e1;
+    font-size: 13px;
+}
+
+@media(max-width: 800px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .profile {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
